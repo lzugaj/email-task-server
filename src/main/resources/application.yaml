@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: ${EMAIL_TASK_DB_URL:jdbc:postgresql://localhost:5433/email-task}
+    username: ${EMAIL_TASK_DB_USERNAME:username}
+    password: ${EMAIL_TASK_DB_PASSWORD:password}
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.xml
+luv2code:
+  emailator:
+    api-info:
+      title: 'Email Simualtor API'
+      description: 'Spring Boot REST API for email simualtor'
+      version: '1.0.0'
+      termsOfServiceUrl: 'https://github.com/lzugaj/email-task-server'
+      name: 'Luka Zugaj'
+      url: 'https://github.com/lzugaj'
+      email: 'luka.zugaj7@gmail.com'
+      license: 'Apache License Version 2.0'
+      licenseUrl: 'https://www.apache.org/licenses/LICENSE-2.0'
+logging:
+  level:
+    org:
+      springframework:
+        web: error
+    com: debug

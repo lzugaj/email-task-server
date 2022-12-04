@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="20221202-000-1" author="lzugaj">
+        <createTable tableName="email_message">
+            <column name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+
+            <column name="email_form" type="TEXT">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="email_to" type="TEXT">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="cc" type="TEXT">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="subject" type="TEXT">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="importance" type="TEXT">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="content" type="TEXT">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="send_at" type="DATETIME">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="20221203-000-1" author="lzugaj">
+        <insert tableName="email_message">
+            <column name="id">100</column>
+            <column name="email_form">john.doe@gmail.com</column>
+            <column name="email_to">franck.miller12@gmail.com</column>
+            <column name="cc"/>
+            <column name="subject">Integration test</column>
+            <column name="importance">LOW</column>
+            <column name="content">Lorem ipsum</column>
+            <column name="send_at">2022-12-03T12:00:00</column>
+        </insert>
+
+        <insert tableName="email_message">
+            <column name="id">101</column>
+            <column name="email_form">mike.stam1@gmail.com</column>
+            <column name="email_to">john.doe@gmail.com</column>
+            <column name="cc">franck.miller12@gmail.com</column>
+            <column name="subject">Integration test reply</column>
+            <column name="importance">HIGH</column>
+            <column name="content">Lorem ipsum</column>
+            <column name="send_at">2022-12-03T12:30:00</column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

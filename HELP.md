@@ -24,3 +24,4 @@ Used environment variables:
 
 ### Database model diagram
 
+### Setup project
