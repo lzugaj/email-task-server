@@ -51,6 +51,6 @@ public class EmailMessageServiceImpl implements EmailMessageService {
     @Override
     public List<EmailMessage> findAll() {
         LOGGER.debug("Start process of searching email messages in database.");
-        return emailMessageRepository.findAll();
+        return emailMessageRepository.findAllByOrderBySendAtDesc();
     }
 }

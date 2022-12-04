@@ -5,7 +5,6 @@ import com.luv2code.emailator.entity.enums.ImportanceType;
 import com.luv2code.emailator.mock.EmailMessageMock;
 import com.luv2code.emailator.repository.EmailMessageRepository;
 import com.luv2code.emailator.service.impl.EmailMessageServiceImpl;
-import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -16,6 +15,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import javax.persistence.EntityNotFoundException;
 import java.time.Clock;
 import java.time.Instant;
 import java.time.ZoneOffset;

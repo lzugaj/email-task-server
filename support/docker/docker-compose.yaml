@@ -12,5 +12,18 @@ services:
     volumes:
       - ../db/init.sh:/docker-entrypoint-initdb.d/init.sh
       - postgres-data:/var/lib/postgresql/data
+  backend:
+    image: backend/backend
+    container_name: "backend"
+    build:
+      context: ../../
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - EMAIL_TASK_DB_URL=jdbc:postgresql://172.17.0.1:5433/email-task
+      - EMAIL_TASK_DB_USERNAME=postgres
+      - EMAIL_TASK_DB_PASSWORD=postgres
 volumes:
   postgres-data:

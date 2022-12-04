@@ -4,6 +4,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
 @NoArgsConstructor
 public class EmailMessageResponse {
@@ -28,5 +30,8 @@ public class EmailMessageResponse {
 
     @Schema(description = "Content of the email", example = "This is the content of the email")
     private String content;
+
+    @Schema(description = "Email send at", example = "This is the date and time when email was sent")
+    private LocalDateTime sendAt;
 
 }
