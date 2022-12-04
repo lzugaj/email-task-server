@@ -38,7 +38,7 @@ public class OpenApiConfiguration {
                         .license(licenseInfo()));
     }
 
-    private io.swagger.v3.oas.models.info.Contact contactInfo() {
+    private Contact contactInfo() {
         return new Contact()
                 .email(email)
                 .name(name)
