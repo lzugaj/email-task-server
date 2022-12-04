@@ -31,3 +31,9 @@ Used environment variables:
 * **luv2code.emailator.api-info.email**: OpenAPI Contact email
 * **luv2code.emailator.api-info.license**: OpenAPI Licence name
 * **luv2code.emailator.api-info.licenseUrl**: OpenAPI Licence url
+
+### OpenAPI Documentation
+* [Email Simulator API Documentation](http://localhost:8080/v3/api-docs)
+
+### Swagger UI
+* [Email Simulator Swagger UI](http://localhost:8080/swagger-ui/index.html/)
