@@ -2,6 +2,10 @@
 
 ## Run application
 
+Clone the backend repository (`git clone https://github.com/lzugaj/email-task-server.git`).
+
+Open project in Intellij IDEA.
+
 It is necessary to position yourself under the ``support/docker`` folder and
 open terminal.
 
@@ -22,7 +26,7 @@ If IP address still not works then stop all running containers
 In this case you will need to add ``.env`` file in project with
 following db properties (``.env`` file is ignored by Git in ``gitignore`` file).
 
-```json
+```
 EMAIL_TASK_DB_URL=jdbc:postgresql://localhost:5433/email-task
 EMAIL_TASK_DB_USERNAME=postgres
 EMAIL_TASK_DB_PASSWORD=postgres
