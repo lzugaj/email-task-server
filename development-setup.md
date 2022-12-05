@@ -23,15 +23,8 @@ If not, then try to find IP address via ``ipconfig`` command.
 
 If IP address still not works then stop all running containers 
 (``docker-compose down``) and start just db image (``docker-compose up db``).
-In this case you will need to add ``.env`` file in project with
-following db properties (``.env`` file is ignored by Git in ``gitignore`` file).
 
-```
-EMAIL_TASK_DB_URL=jdbc:postgresql://localhost:5433/email-task
-EMAIL_TASK_DB_USERNAME=postgres
-EMAIL_TASK_DB_PASSWORD=postgres
-```
-
-After that you just need to add ``.env`` file in Server Configuration
+In this case you will need to add ``.env`` file from project to Server 
+Run/Debug Configuration
 
 ![Server Configuration](support/image/Capture.PNG)
