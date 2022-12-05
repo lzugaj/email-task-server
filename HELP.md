@@ -36,4 +36,4 @@ Used environment variables:
 * [Email Simulator API Documentation](http://localhost:8080/v3/api-docs)
 
 ### Swagger UI
-* [Email Simulator Swagger UI](http://localhost:8080/swagger-ui/index.html/)
+* [Email Simulator Swagger UI](http://localhost:8080/swagger-ui/index.html#/)
